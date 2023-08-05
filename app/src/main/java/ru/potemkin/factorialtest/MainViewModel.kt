@@ -37,7 +37,7 @@ class MainViewModel : ViewModel() {
     }
 
 
-    private suspend fun factorial(number: Long): String {
+    private fun factorial(number: Long): String {
         var result = BigInteger.ONE
         for (i in 1..number) {
             result = result.multiply(BigInteger.valueOf(i))
